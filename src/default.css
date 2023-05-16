@@ -14,12 +14,15 @@
 /* border props */
  --rad-min: 2vh;
  --rad-max: 5vh;
+ --marg-max: 10vh;
 }
 
 * {
 	box-sizing: border-box;
 	outline: none;
 }
+
+*[uppercase] { text-transform: uppercase; }
 
 html { overflow-x: hidden; }
 
@@ -50,6 +53,11 @@ i {
 	padding: 1vh 3vw;
 	color: var(--primary-white);
 	font-weight: var(--wght-max);
+}
+
+.btn[active] {
+	background: var(--primary-white);
+	color: var(--primary-black);
 }
 
 .btn:hover {
