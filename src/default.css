@@ -53,6 +53,7 @@ i {
 	padding: 1vh 3vw;
 	color: var(--primary-white);
 	font-weight: var(--wght-max);
+	height: fit-content; /* bug fix */
 }
 
 .btn[active] {

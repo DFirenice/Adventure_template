@@ -202,8 +202,11 @@
 }
 
 .hero_cardInfo {
+	display: flex;
+	justify-content: center;
 	position: absolute;
 	padding: var(--rad-min);
+	height: 100%;
 	top: 0;
 }
 
@@ -211,3 +214,21 @@
 	display: flex;
 	flex-direction: row;
 }
+
+.hero_cardInfo > div:nth-child(2) {
+	position: absolute;
+	bottom: 10%;
+	background: var(--trns-darker-black);
+	border-radius: var(--rad-min);
+	padding: var(--rad-min);
+}
+
+.hero_cardInfo > div > h2::before,
+.hero_cardInfo > div > sub::before {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 0.8vw;
+}
+
+.hero_cardInfo > div > h2::before { content: url('./../content/icons/location.svg'); }
+.hero_cardInfo > div > sub::before { content: url('./../content/icons/clock.svg'); }
