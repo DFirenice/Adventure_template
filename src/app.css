@@ -40,16 +40,16 @@
 #main_menu {
 	display: none;
 	position: absolute;
+	flex-direction: column;
 	background: var(--trns-darker-black);
 	animation: slide-left 0.3s ease-out both;
-	flex-direction: column;
-	padding: 1vh 1vw;
-	z-index: 10;
 	max-height: 100vh;
-	height: 100vh;
+	min-height: max(100vh, 100%);
 	width: 25%;
 	right: 0;
 	top: 0;
+	padding: 1vh 1vw;
+	z-index: 10;
 }
 
 #menu_btn {
@@ -95,7 +95,7 @@
 }
 
 .content_icons > div {
-	padding: 1.5rem;
+	padding: 1.25vw 1.25vw;
 	background: var(--trns-black);
 	border: 1px solid var(--primary-gray);
 	border-radius: var(--rad-min);

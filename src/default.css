@@ -18,12 +18,12 @@
 }
 
 * {
+	font-size: calc(0.4rem + 1vh);
 	box-sizing: border-box;
 	outline: none;
 }
 
 *[uppercase] { text-transform: uppercase; }
-
 html { overflow-x: hidden; }
 
 body, ul, li, h2, h1 {
@@ -61,7 +61,8 @@ i {
 	color: var(--primary-black);
 }
 
-.btn:hover {
+.btn:hover,
+.btn:active {
 	background: var(--primary-white);
 	color: var(--primary-black);
 }
@@ -71,7 +72,8 @@ i {
 	border-bottom: 2px solid transparent;
 }
 
-#text_link:hover { border-bottom: 2px solid var(--primary-white); }
+#text_link:hover,
+#text_link:active { border-bottom: 2px solid var(--primary-white); }
 
 .move_top {
 	display: none;
