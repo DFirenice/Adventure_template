@@ -1,13 +1,21 @@
-const elements = document.querySelectorAll('.move_top'),
-	 menuBtn = document.getElementById('menu_btn'),
-	 mainMenu = document.getElementById('main_menu')
+const menuBtn = document.getElementById('menu_btn'),
+	  mainMenu = document.getElementById('main_menu'),
+	  animate_me = document.querySelectorAll(".slide_top")
 let menuState = true // true - hidden default
 
 window.onload = () => {
-	elements.forEach((element) => {
-		element.style.display = 'flex'
-		element.style.animationDelay = "0.125s"
-		element.style.animation = "slide-top 0.5s ease-out both"
+	animate_me.forEach((e) => {
+		if (e.getBoundingClientRect().top < window.innerHeight) {
+			e.style.display = "flex"
+			e.style.animation = "slide-top 0.75s ease-out 0s 1 normal forwards"
+		}
+
+		window.addEventListener("scroll", () => {
+		    if (e.getBoundingClientRect().top < window.innerHeight) {
+				e.style.display = "flex"
+				e.style.animation = "slide-top 0.75s ease-out 0s 1 normal forwards"
+		    }
+		})
 	})
 }
 

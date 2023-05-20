@@ -75,18 +75,17 @@ i {
 #text_link:hover,
 #text_link:active { border-bottom: 2px solid var(--primary-white); }
 
-.move_top {
+.slide_top {
 	display: none;
 	animation: none;
 }
 
 @keyframes slide-top {
 	0% {
-		transform: translateY(0%);
+		transform: translateY(5%);
 		opacity: 0;
-	}
-	100% {
-		transform: translateY(-15%);
+	} 100% {
+		transform: translateY(0);
 		opacity: 1;
 	}
 }
@@ -95,8 +94,7 @@ i {
 	0% {
 		transform: translateX(20%);
 		opacity: 0;
-	}
-	100% {
+	} 100% {
 		transform: translateX(0%);
 		opacity: 1;
 	}

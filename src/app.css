@@ -61,7 +61,7 @@
 
 /* head content */
 .head_content {
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
@@ -70,12 +70,14 @@
 }
 
 .head_content > h1 {
+	display: flex;
 	font-weight: var(--wght-max);
 	text-transform: uppercase;
 	font-size: 13vh;
 }
 
 .head_content > div {
+	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	margin-top: var(--rad-max);
